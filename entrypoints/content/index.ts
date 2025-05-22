@@ -1,6 +1,6 @@
 export default defineContentScript({
   matches: ['*://*.google.com/*'],
   main() {
-    console.log('Hello content.');
+    console.log('hello from entrypoints/content/index.ts');
   },
 });
