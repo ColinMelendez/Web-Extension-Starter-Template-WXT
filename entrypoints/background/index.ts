@@ -11,7 +11,7 @@ export default defineBackground({
 
       if (details.reason === 'install') {
         browser.tabs.create({
-          url: 'welcome-page.html',
+          url: browser.runtime.getURL('/welcome-page.html'),
         });
       }
     });
