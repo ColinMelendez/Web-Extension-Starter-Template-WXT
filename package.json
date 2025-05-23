@@ -12,7 +12,10 @@
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox",
     "compile": "tsc --noEmit",
-    "postinstall": "wxt prepare"
+    "postinstall": "wxt prepare",
+    "install-browsers": "pnpm install-firefox && pnpm install-chrome",
+    "install-firefox": "pnpx @puppeteer/browsers install firefox@stable",
+    "install-chrome": "pnpx @puppeteer/browsers install chrome@stable"
   },
   "dependencies": {
     "react": "^19.1.0",
