@@ -1,8 +1,15 @@
 import { defineConfig } from 'wxt';
+import tailwindcss from '@tailwindcss/vite'
 
 // See https://wxt.dev/api/config.html
 export default defineConfig({
+  // WXT module plugins
   modules: ['@wxt-dev/module-react'],
+  vite: () => ({
+    plugins: [
+      tailwindcss(),
+    ],
+  }),
   manifest: {
     web_accessible_resources: [],
     // Chrome needs this to allow the extension to ask users for permissions on mv3
