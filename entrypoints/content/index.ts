@@ -1,3 +1,5 @@
+import { defineContentScript } from '#imports'; // WXT built-ins
+
 export default defineContentScript({
   /**
    * NOTE:

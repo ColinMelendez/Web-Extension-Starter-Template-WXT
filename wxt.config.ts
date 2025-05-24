@@ -50,4 +50,6 @@ export default defineConfig({
       "https://google.com",
     ],
   },
+  // Disable WXT auto-imports - use manual imports instead
+  imports: false,
 });

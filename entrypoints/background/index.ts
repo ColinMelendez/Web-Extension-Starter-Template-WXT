@@ -1,4 +1,5 @@
-import 'webext-dynamic-content-scripts'; // imported for it's side effects
+import 'webext-dynamic-content-scripts'; // auto-refresh content-scripts when permissions change
+import { defineBackground } from '#imports'; // WXT built-ins
 import addPermissionToggle from 'webext-permission-toggle';
 
 export default defineBackground({
