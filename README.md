@@ -16,7 +16,7 @@ pnpm i
 
 In order to get the development browser auto-launch feature working, some manual setup is required.
 
-The web-ext.config.ts file needs to have the paths to local chrome and firefox development browsers specified in order for the `pnpm run dev` and `pnpm run dev:firefox` commands to work. These can be the existing binaries on your device, but it is recommended to install the browser binaries specifically for this project for more control. Note that for chrome versions after 137.x, you MUST use a ["Chrome-For-Testing" version of chrome for any of the automation to work](https://wxt.dev/guide/essentials/config/browser-startup.html#browser-startup).
+The `web-ext.config.ts` file needs to have the paths to local chrome and firefox development browsers specified in order for the `pnpm run dev` and `pnpm run dev:firefox` commands to work. These can be the existing binaries on your device, but it is recommended to install the browser binaries specifically for this project for more control. Note that for chrome versions after 137.x, you MUST use a ["Chrome-For-Testing" version of chrome for any of the automation to work](https://wxt.dev/guide/essentials/config/browser-startup.html#browser-startup).
 
 The template provides a script `install-browsers` to simplify things.
 
